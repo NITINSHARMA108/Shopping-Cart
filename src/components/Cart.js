@@ -1,9 +1,10 @@
 import React from 'react'
-import Cartitem from './Cartitem';
-import {useState} from 'react';
+
 import {Link} from 'react-router-dom';
+
+import Cartitem from './Cartitem';
 import Total from './Total';
-const Cart = ({cart,total,calTotal,increaseQuantity,decreaseQuantity}) => {
+const Cart = ({cart,total,increaseQuantity,decreaseQuantity}) => {
     let array;
     function sortCart(c){
         array=c.sort((a,b)=>a.id-b.id);
@@ -18,7 +19,7 @@ const Cart = ({cart,total,calTotal,increaseQuantity,decreaseQuantity}) => {
         <div style={{height:'80vh',overflowY:'auto',marginTop:'15vh'}}>
         <div class="cart-list">
             {sortCart(cart).map((c)=>{
-                return <Cartitem details={c} total={total} calTotal={calTotal} decreaseQuantity={decreaseQuantity}  increaseQuantity={increaseQuantity} />
+                return <Cartitem details={c} total={total}  decreaseQuantity={decreaseQuantity}  increaseQuantity={increaseQuantity} />
             })}
             
         </div>
