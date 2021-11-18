@@ -26,7 +26,7 @@ const Cart = ({cart,total,calTotal,increaseQuantity,decreaseQuantity}) => {
         </div>:
         <div style={{textAlign:'center',height:'80vh',overflowY:'auto',marginTop:'15vh'}}>
             <h2>No items in Cart</h2>
-            <Link to="/Shopping-Cart/">Add Items</Link>
+            <Link to="/">Add Items</Link>
         </div>
     )
 }

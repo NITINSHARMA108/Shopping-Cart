@@ -137,8 +137,8 @@ function App() {
         <Header objects={objects} />
         <Routes>
           
-          <Route exact path="/Shopping-Cart/" element={<Homepage items={items} addtoCart={addtoCart}/>} />
-          <Route exact path="/Shopping-cart/cart" element={<Cart cart={cart} total={total} calTotal={caltotal}  decreaseQuantity={decreaseQuantity}  increaseQuantity={increaseQuantity}/>}   />
+          <Route exact path="/" element={<Homepage items={items} addtoCart={addtoCart}/>} />
+          <Route exact path="/cart" element={<Cart cart={cart} total={total} calTotal={caltotal}  decreaseQuantity={decreaseQuantity}  increaseQuantity={increaseQuantity}/>}   />
         </Routes>
       </BrowserRouter>
     </div>
